@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>nbkj-basic-eureka</module>
+        <module>nbkj-basic-zuul</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>nbkj-basics</artifactId>

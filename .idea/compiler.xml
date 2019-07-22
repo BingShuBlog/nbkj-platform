@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nbkj-basic-zuul" />
+        <module name="nbkj-basic-eureka" />
+        <module name="nbkj-service-weixin" />
+        <module name="nbkj-service-api-impl-weixin" />
+        <module name="nbkj-service-entity-weixin" />
+        <module name="nbkj-service-api-impl-member" />
+        <module name="nbkj-service-member" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="nbkj-basic-eureka" options="-parameters" />
+      <module name="nbkj-basic-zuul" options="-parameters" />
+      <module name="nbkj-entity-api" options="" />
+      <module name="nbkj-service-api" options="-parameters" />
+      <module name="nbkj-service-api-impl" options="-parameters" />
+      <module name="nbkj-service-api-impl-member" options="-parameters" />
+      <module name="nbkj-service-api-impl-weixin" options="-parameters" />
+      <module name="nbkj-service-entity-weixin" options="-parameters" />
+      <module name="nbkj-service-member" options="-parameters" />
+      <module name="nbkj-service-weixin" options="-parameters" />
+    </option>
+  </component>
+</project>

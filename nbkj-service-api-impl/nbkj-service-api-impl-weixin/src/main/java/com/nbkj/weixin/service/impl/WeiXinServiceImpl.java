@@ -2,6 +2,7 @@ package com.nbkj.weixin.service.impl;
 
 import com.nbkj.entity.AppEntity;
 import com.nbkj.weixin.service.WeiXinService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,9 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class WeiXinServiceImpl implements WeiXinService {
+    @Value("${nbkj.weixin.name}")
+    private String name;
     @Override
     public AppEntity getApp() {
-        AppEntity appEntity = AppEntity.builder().appId("123456").appName("BingShu").build();
+        AppEntity appEntity = AppEntity.builder().appId("123456").appName(name).build();
         return appEntity;
     }
 }
